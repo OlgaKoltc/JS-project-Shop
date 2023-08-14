@@ -1,12 +1,10 @@
 .products {
     padding: 0px 70px 0px 70px;
-    margin-bottom: 150px;
 }
 
 .products__container {
     margin: 0 auto;
     width: 100%;
-    height: 1084px;
     box-sizing: content-box;
 }
 
