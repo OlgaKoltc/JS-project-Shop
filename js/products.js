@@ -65,16 +65,16 @@ const CATALOG =
     labelnew: "New",
   }];
 class Products {
-       
+
   render() {
 
     let htmlCatalog = "";
 
-   CATALOG.forEach(({id, labelsale, labelnew, image, name, sort, price, price2}) => {
-    htmlCatalog += `<div class="item-product" data-id="${id}">` + 
-    ((labelsale==undefined)?'':`<div class="item-product__label sale">${labelsale}</div>`)+
-    ((labelnew==undefined)?'':`<div class="item-product__label new">${labelnew}</div>`)+
-            `<div class="item-product__img">
+    CATALOG.forEach(({ id, labelsale, labelnew, image, name, sort, price, price2 }) => {
+      htmlCatalog += `<div class="item-product" data-id="${id}">` +
+        ((labelsale == undefined) ? '' : `<div class="item-product__label sale">${labelsale}</div>`) +
+        ((labelnew == undefined) ? '' : `<div class="item-product__label new">${labelnew}</div>`) +
+        `<div class="item-product__img">
             <img src="${image}"/></div>
             <div class="item-product__info">
             <div class="item-product__name">${name}</div>
@@ -86,9 +86,9 @@ class Products {
               </div>
               <div class="item-product__options">
               <div class="item-product__link">
-              <a href="#" class="item-product__button btn_white">Add to cart</a>
-              <a href="#" class="item-product__link-share"><img src="images/icons/share_icon.svg" width=18px> Share</a>
-              <a href="#" class="item-product__link-like"><img src="images/icons/heart-w_icon.svg" width=20px> Like</a>
+              <a href="javascript://" class="item-product__button btn_white">Add to cart</a>
+              <a href="javascript://" class="item-product__link-share"><img src="images/icons/share_icon.svg" width=18px> Share</a>
+              <a href="javascript://" class="item-product__link-like"><img src="images/icons/heart-w_icon.svg" width=20px> Like</a>
               </div>
               </div>
     </div>
@@ -116,6 +116,6 @@ for (let i = 0; i < selectedItems.length; i++) {
   })
 }
 
-const btn = document.querySelector('.products__button'). addEventListener('click', function() {
+const btn = document.querySelector('.products__button').addEventListener('click', function () {
   alert('Файл не найден')
 });
